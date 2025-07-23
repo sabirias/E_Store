@@ -59,8 +59,8 @@ const NewsletterSignup = () => {
           Thank You for Subscribing!
         </h2>
         <p className="text-blue-100 text-lg">
-          You'll be the first to know about our latest products and exclusive
-          offers.
+          You&apos;ll be the first to know about our latest products and
+          exclusive offers.
         </p>
       </motion.div>
     );

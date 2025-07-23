@@ -17,6 +17,7 @@ import { formatPrice, calculateDiscount } from "../../lib/utils/format";
 import useCartStore from "../../lib/store/cart";
 import useWishlistStore from "../../lib/store/wishlist";
 import toast from "react-hot-toast";
+import Link from "next/link";
 
 const ProductDetail = ({ product }) => {
   const [selectedImage, setSelectedImage] = useState(0);
@@ -71,15 +72,15 @@ const ProductDetail = ({ product }) => {
       <nav className="mb-8">
         <ol className="flex items-center space-x-2 text-sm text-gray-500 dark:text-gray-400">
           <li>
-            <a href="/" className="hover:text-blue-600">
+            <Link href="/" className="hover:text-blue-600">
               Home
-            </a>
+            </Link>
           </li>
           <li>/</li>
           <li>
-            <a href="/products" className="hover:text-blue-600">
+            <Link href="/products" className="hover:text-blue-600">
               Products
-            </a>
+            </Link>
           </li>
           <li>/</li>
           <li>

@@ -152,13 +152,13 @@ const SearchBar = () => {
                   onClick={handleSearch}
                   className="w-full text-sm text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 text-center py-1"
                 >
-                  View all results for "{query}"
+                  View all results for &quot;{query}&quot;
                 </button>
               </div>
             </div>
           ) : query.length > 1 ? (
             <div className="p-4 text-center text-gray-500 dark:text-gray-400">
-              No products found for "{query}"
+              No products found for &quot;{query}&quot;
             </div>
           ) : null}
         </div>

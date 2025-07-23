@@ -55,8 +55,8 @@ const Footer = () => {
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed">
               Your ultimate shopping destination for quality products at great
-              prices. We're committed to providing excellent customer service
-              and fast shipping.
+              prices. We&apos;re committed to providing excellent customer
+              service and fast shipping.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social) => (

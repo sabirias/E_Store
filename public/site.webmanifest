@@ -1,0 +1,13 @@
+{
+  "name": "E-Store - Modern E-Commerce",
+  "short_name": "E-Store",
+  "description": "A modern e-commerce platform built with Next.js",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait-primary",
+  "categories": ["shopping", "ecommerce"],
+  "lang": "en",
+  "dir": "ltr"
+}

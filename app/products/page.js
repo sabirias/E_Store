@@ -16,7 +16,7 @@ export default function ProductsPage({ searchParams }) {
         </div>
         <div className="flex flex-col lg:flex-row gap-8">
           <div className="lg:w-1/4">
-            <ProductsFilter />
+            <ProductsFilter searchParams={searchParams} />
           </div>
           <div className="lg:w-3/4">
             <ProductsList searchParams={searchParams} />

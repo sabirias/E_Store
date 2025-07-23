@@ -33,11 +33,15 @@ export default function ProductsPage({ searchParams }) {
           {/* Products Grid */}
           <div className="lg:w-3/4">
             <Suspense fallback={<LoadingSpinner size="lg" />}>
-              <ProductsList searchParams={searchParams} />
+              <ProductsPageContent searchParams={searchParams} />
             </Suspense>
           </div>
         </div>
       </div>
     </div>
   );
+}
+
+function ProductsPageContent({ searchParams }) {
+  return <ProductsList searchParams={searchParams} />;
 }

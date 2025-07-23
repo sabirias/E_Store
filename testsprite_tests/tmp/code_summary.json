@@ -1,0 +1,34 @@
+{
+  "projectName": "my-ecommerce-app",
+  "techStack": {
+    "frontend": "Next.js 15, React 18, Tailwind CSS 4, Framer Motion",
+    "backend": "Node.js, Next.js API routes",
+    "database": "MongoDB (Mongoose ODM)",
+    "auth": "NextAuth.js (Credentials, Google OAuth)",
+    "stateManagement": "Zustand",
+    "forms": "React Hook Form, Zod",
+    "ui": "Lucide React icons, custom components",
+    "deployment": "Vercel-ready"
+  },
+  "features": [
+    "Product Catalog with categories",
+    "Shopping Cart (add/remove/update)",
+    "User Authentication (login/register/logout)",
+    "Checkout Process",
+    "Order History and tracking",
+    "Product Search and filtering",
+    "Admin Panel for product management",
+    "Responsive Design",
+    "SEO Optimization",
+    "Dark Mode toggle",
+    "Wishlist functionality",
+    "Product Reviews and ratings",
+    "Newsletter Subscription",
+    "Real-time Cart",
+    "Image Optimization",
+    "Form Validation",
+    "Toast Notifications",
+    "Loading Skeletons and error boundaries",
+    "Glassmorphism UI effects"
+  ]
+}

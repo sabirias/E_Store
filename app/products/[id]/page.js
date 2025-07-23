@@ -32,7 +32,7 @@ export async function generateMetadata({ params }) {
         type: "website", // changed from "product" to "website"
       },
     };
-  } catch (error) {
+  } catch (_error) {
     return {
       title: "Product - E-Store",
       description: "Product details",
@@ -64,8 +64,8 @@ export default async function ProductPage({ params }) {
         </div>
       </div>
     );
-  } catch (error) {
-    console.error("Error fetching product:", error);
+  } catch (_error) {
+    console.error("Error fetching product:", _error);
     notFound();
   }
 }

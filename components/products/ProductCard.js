@@ -30,7 +30,7 @@ const ProductCard = ({ product }) => {
     try {
       addItem(product, 1);
       toast.success(`${product.name} added to cart!`);
-    } catch (error) {
+    } catch {
       toast.error("Failed to add item to cart");
     } finally {
       setIsLoading(false);

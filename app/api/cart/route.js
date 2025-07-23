@@ -33,7 +33,7 @@ export async function GET(request) {
   }
 }
 
-export async function POST(request) {
+export async function POST(_request) {
   try {
     const session = await getServerSession(authOptions);
 
@@ -42,7 +42,7 @@ export async function POST(request) {
     }
 
     await connectDB();
-    const { productId, quantity = 1 } = await request.json();
+    const { productId, quantity = 1 } = await _request.json();
 
     // Validate product
     const product = await Product.findById(productId);

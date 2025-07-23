@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import {
   Star,
   Heart,
@@ -41,7 +40,7 @@ const ProductDetail = ({ product }) => {
     try {
       addItem(product, quantity);
       toast.success(`${product.name} added to cart!`);
-    } catch (error) {
+    } catch {
       toast.error("Failed to add item to cart");
     } finally {
       setIsLoading(false);

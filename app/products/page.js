@@ -1,14 +1,5 @@
-import { Suspense } from "react";
-import ProductsList from "../../components/products/ProductsList";
 import ProductsFilter from "../../components/products/ProductsFilter";
-import LoadingSpinner from "../../components/ui/LoadingSpinner";
-
-export const metadata = {
-  title: "Products - E-Store",
-  description:
-    "Browse our wide selection of products across electronics, clothing, books, and home & garden categories.",
-  keywords: "products, electronics, clothing, books, home & garden, shopping",
-};
+import ProductsList from "../../components/products/ProductsList";
 
 export default function ProductsPage({ searchParams }) {
   return (
@@ -23,25 +14,15 @@ export default function ProductsPage({ searchParams }) {
             Discover amazing products at great prices
           </p>
         </div>
-
         <div className="flex flex-col lg:flex-row gap-8">
-          {/* Filters Sidebar */}
           <div className="lg:w-1/4">
             <ProductsFilter />
           </div>
-
-          {/* Products Grid */}
           <div className="lg:w-3/4">
-            <Suspense fallback={<LoadingSpinner size="lg" />}>
-              <ProductsPageContent searchParams={searchParams} />
-            </Suspense>
+            <ProductsList searchParams={searchParams} />
           </div>
         </div>
       </div>
     </div>
   );
-}
-
-function ProductsPageContent({ searchParams }) {
-  return <ProductsList searchParams={searchParams} />;
 }

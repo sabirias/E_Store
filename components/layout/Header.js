@@ -107,7 +107,7 @@ const Header = () => {
             {/* Right Side Actions */}
             <div className="flex items-center space-x-4">
               {/* Theme Toggle */}
-              <button
+              {/* <button
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
                 className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
                 aria-label="Toggle theme"
@@ -117,7 +117,7 @@ const Header = () => {
                 ) : (
                   <Moon className="w-5 h-5" />
                 )}
-              </button>
+              </button> */}
 
               {/* Wishlist */}
               <Link
